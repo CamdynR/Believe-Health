@@ -1,0 +1,13 @@
+.parent {
+    width: 100%;
+}
+
+#title {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+html {
+    background-color: #19afe6;
+}
