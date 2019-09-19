@@ -1,0 +1,127 @@
+a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+a:active, a:focus,
+button:active, button:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    align-content: center;
+    background: url('../images/header.webp') no-repeat center center fixed;
+    -webkit-background-size: 120%;
+    -moz-background-size: 120%;
+    -o-background-size: 120%;
+    background-size: 120%;
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header";
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    grid-area: header;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: -10px;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: 520px 520px;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+    height: 100px;
+    left: 50%;
+    margin-left: -520px;
+    margin-top: 20px;
+    position: absolute;
+    width: 1040px;
+}
+
+.topbarLink {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+#believeLogo {
+    margin-left: 20px;
+    width: 220px;
+}
+
+#believeLogo:hover {
+    cursor: pointer;
+}
+
+#believeLogoLink {
+    grid-area: left;
+}
+
+#contactButton {
+    background-color: #ea1e49;
+    border: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    height: 45px;
+    letter-spacing: 1px; 
+    transition: ease 0.2s all;
+    width: 130px;
+}
+
+#contactButton:hover {
+    filter: brightness(85%);
+    -webkit-filter: brightness(85%);
+    -moz-filter: brightness(85%);
+}
+
+#contactButton:active {
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    transition: none;
+}
+
+#homeLink {
+    margin-left: 0;
+}
+
+#topbarLinksDiv {
+    align-self: center;
+    grid-area: right;
+    justify-self: center;
+}
+
+#topbarLinksDiv a:hover {
+    border-bottom: 3px solid #1aade4;
+    padding-bottom: 3px;
+    transition: ease 0.1s all;
+}
