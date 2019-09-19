@@ -25,8 +25,10 @@ html {
 }
 
 .header {
-    align-content: center;
-    background: url('../images/header.webp') no-repeat center center fixed;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ), url('../images/header.webp') no-repeat center center fixed;
     -webkit-background-size: 120%;
     -moz-background-size: 120%;
     -o-background-size: 120%;
@@ -37,15 +39,15 @@ html {
     grid-template-columns: 100%;
     grid-template-areas: "header";
     height: 100vh;
-    justify-content: center;
     width: 100%;
 }
 
 .title {
+    align-self: center;
     color: white;
     grid-area: header;
-    margin: 0 auto;
     text-align: center;
+    justify-self: center;
 }
 
 .title h1 {
@@ -55,34 +57,23 @@ html {
 }
 
 .topbar {
-    display: grid;
-    grid-template-columns: 520px 520px;
-    grid-template-rows: auto;
-    grid-template-areas: "left right";
-    height: 100px;
-    left: 50%;
-    margin-left: -520px;
     margin-top: 20px;
     position: absolute;
-    width: 1040px;
+    width: 100%;
 }
 
 .topbarLink {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-left: 15px;
 }
 
 #believeLogo {
-    margin-left: 20px;
-    width: 220px;
+    margin-left: 40px;
+    width: 250px;
 }
 
 #believeLogo:hover {
     cursor: pointer;
-}
-
-#believeLogoLink {
-    grid-area: left;
 }
 
 #contactButton {
@@ -115,9 +106,9 @@ html {
 }
 
 #topbarLinksDiv {
-    align-self: center;
-    grid-area: right;
-    justify-self: center;
+    float: right;
+    margin-right: 40px;
+    text-shadow: 2px 2px black;
 }
 
 #topbarLinksDiv a:hover {
