@@ -25,21 +25,16 @@ html {
 }
 
 .header {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ), url('../images/header.webp') no-repeat center center fixed;
-    -webkit-background-size: 120%;
-    -moz-background-size: 120%;
-    -o-background-size: 120%;
-    background-size: 120%;
     display: grid;
     font-family: 'Raleway', sans-serif;
     grid-template-rows: auto;
     grid-template-columns: 100%;
     grid-template-areas: "header";
     height: 100vh;
+    position: absolute;
+    top: 0px;
     width: 100%;
+    z-index: 5;
 }
 
 .title {
@@ -51,15 +46,20 @@ html {
 }
 
 .title h1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 900;
     margin-bottom: -10px;
 }
 
+.title p {
+    font-size: 1.1rem;
+}
+
 .topbar {
-    margin-top: 20px;
+    top: 20px;
     position: absolute;
     width: 100%;
+    z-index: 6;
 }
 
 .topbarLink {
@@ -76,12 +76,32 @@ html {
     cursor: pointer;
 }
 
+#believeTopic {
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    grid-area: believe;
+    justify-self: center;
+    text-align: center;
+    width: 650px;
+    z-index: 5;
+}
+
+#believeTopic h1 {
+    color: #1aade4 !important;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#believeTopic h3 {
+    font-size: 1.8rem;
+}
+
 #contactButton {
     background-color: #ea1e49;
     border: none;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     height: 45px;
     letter-spacing: 1px; 
     transition: ease 0.2s all;
@@ -101,8 +121,111 @@ html {
     transition: none;
 }
 
+#headerBackground {
+    left: 0;
+    position: absolute;
+    top: -150px;
+    width: 100%;
+    z-index: 1;
+}
+
 #homeLink {
     margin-left: 0;
+}
+
+#outerProbs {
+    background-color: white;
+    box-shadow: 0px 0px 40px 12px #e0e0e0;
+    height: 500px;
+    margin-top: 50px;
+    padding-top: -1px;
+}
+
+#prob1 {
+    margin-left: 20px;
+    margin-top: 100px;
+
+    background: url('../images/diamond.png') no-repeat left 15px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    padding-left: 45px;
+    width: 540px;
+}
+
+#prob3 {
+    margin-left: 25px;
+    margin-top: 290px;
+
+    background: url('../images/diamond.png') no-repeat left 30px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    padding-left: 45px;
+    width: 540px;
+}
+
+#prob1 li, 
+#prob3 li {
+    font-size: 1.5rem;
+}
+
+#problemDivEllipse {
+    margin-top: -1050px;
+    position: absolute;
+    right: 0;
+}
+
+#problemList {
+    font-family: 'Raleway', sans-serif;
+    grid-area: rect;
+    z-index: 9;
+}
+
+/*
+#problemList ul {
+    background: url('../images/diamond.png') no-repeat left 30px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    padding-left: 45px;
+    width: 540px;
+}
+*/
+
+#problemTopic {
+    align-self: center;
+    grid-area: problem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -200px;
+    width: 550px;
+}
+
+#problemTopic h1 {
+    color: #ea1e49;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#problemTopic p {
+    color: #8c8c8c;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#theProblemDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "believe believe"
+    "problem rect"
+    "problem rect";
+    height: 1200px;
+    margin-top: 105vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1350px;
 }
 
 #topbarLinksDiv {
