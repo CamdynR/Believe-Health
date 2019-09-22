@@ -133,6 +133,16 @@ html {
     margin-left: 0;
 }
 
+#middleProb {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 40px 12px #e0e0e0;
+    margin-top: 265px;
+    margin-left: -55px;
+    height: 170px;
+    width: 785px;
+}
+
 #outerProbs {
     background-color: white;
     box-shadow: 0px 0px 40px 12px #e0e0e0;
@@ -142,20 +152,36 @@ html {
 }
 
 #prob1 {
-    margin-left: 20px;
+    margin-left: 45px;
     margin-top: 100px;
 
-    background: url('../images/diamond.png') no-repeat left 15px;
+    background: url('../images/diamond.png') no-repeat left 69px;
     background-size: 25px;
     display: block;
     list-style-type: none;
     padding-left: 45px;
+    padding-top: 55px;
     width: 540px;
 }
 
+#prob2 {
+    background: url('../images/diamond.png') no-repeat left 50px;
+    background-size: 25px;
+    display: block;
+    list-style-type: none;
+    margin-left: 150px;
+    padding-left: 45px;
+    padding-top: 36px;
+    width: 540px;
+}
+
+#prob2 li {
+    width: 430px;
+}
+
 #prob3 {
-    margin-left: 25px;
-    margin-top: 290px;
+    margin-left: 45px;
+    margin-top: 266px;
 
     background: url('../images/diamond.png') no-repeat left 30px;
     background-size: 25px;
@@ -166,6 +192,7 @@ html {
 }
 
 #prob1 li, 
+#prob2 li,
 #prob3 li {
     font-size: 1.5rem;
 }
@@ -182,22 +209,11 @@ html {
     z-index: 9;
 }
 
-/*
-#problemList ul {
-    background: url('../images/diamond.png') no-repeat left 30px;
-    background-size: 25px;
-    display: block;
-    list-style-type: none;
-    padding-left: 45px;
-    width: 540px;
-}
-*/
-
 #problemTopic {
     align-self: center;
     grid-area: problem;
     font-family: 'Raleway', sans-serif;
-    margin-top: -200px;
+    margin-top: -40px;
     width: 550px;
 }
 
