@@ -24,6 +24,61 @@ html {
     padding: 0;
 }
 
+.benefitsDivTop {
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    grid-template-areas: 
+    "bdTitle bdTitle bdTitle"
+    "bdEasyAccess bdAppointments bdSchedule";
+    height: 455px;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    width: 1350px;
+    z-index: 5;
+}
+
+.benefitsDivBottom {
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px;
+    grid-template-areas: 
+    "bdCoverage bdSchedule";
+    height: 220px;
+    justify-items: center;
+    margin: 120px auto 100px auto;
+    position: relative;
+    text-align: center;
+    width: 900px;
+    z-index: 5;
+}
+
+
+.benefitsDivTop h3,
+.benefitsDivBottom h3 {
+    font-size: 1.8rem;
+    margin-bottom: -5px;
+}
+
+.benefitsDivTop img,
+.benefitsDivBottom img {
+    margin-bottom: -15px;
+    width: 130px;
+}
+
+.benefitsDivTop p,
+.benefitsDivBottom p {
+    font-size: 1.4rem;
+    width: 280px;
+}
+
 .greaterConvGrid {
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -37,10 +92,7 @@ html {
     "grVirtual grFlash"
     "grPersonal grSupport";
     height: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -600px;
-    margin-bottom: 300px;
+    margin: -600px auto 230px auto;
     position: relative;
     width: 1350px;
     z-index: 5;
@@ -55,6 +107,10 @@ html {
 
 .greaterConvTile h3 {
     font-size: 1.5rem;
+}
+
+.greaterConvTile img {
+    position: absolute;
 }
 
 .greaterConvTile p {
@@ -110,6 +166,45 @@ html {
 .topbarLink {
     font-size: 1.3rem;
     margin-left: 15px;
+}
+
+#backgroundCircles {
+    left: 50%;
+    margin: -760px 0 0 -430px;
+    position: absolute;
+    width: 860px;
+    z-index: 1;
+}
+
+#bdAppointments {
+    grid-area: bdAppointments;
+}
+
+#bdCoverage {
+    grid-area: bdCoverage;
+}
+
+#bdEasyAccess {
+    grid-area: bdEasyAccess;
+}
+
+#bdTitle {
+    grid-area: bdTitle;
+    margin-top: 00px;
+}
+
+#bdTitle h1 {
+    color: #33b1e1;
+    font-size: 3rem;
+}
+
+#bdTitle h3 {
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+#bdSchedule {
+    grid-area: bdSchedule;
 }
 
 #believeLogo {
@@ -215,20 +310,45 @@ html {
     grid-area: grFlash;
 }
 
+#grFlashPass img {
+    margin: 18px 0 0 25px;
+    width: 50px;
+}
+
 #grPersonal {
     grid-area: grPersonal;
+}
+
+#grPersonal img {
+    margin: 16px 0 0 25px;
+    width: 50px;
 }
 
 #grSmartMsg {
     grid-area: grSmart;
 }
 
+#grSmartMsg img {
+    margin: 15px 0 0 32px;
+    width: 40px;
+}
+
 #grSupport {
     grid-area: grSupport;
 }
 
+#grSupport img {
+    margin: 14px 0 0 25px;
+    width: 47px;
+}
+
 #grVirtual {
     grid-area: grVirtual;
+}
+
+#grVirtual img {
+    margin: 19px 0 0 26px;
+    width: 47px;
 }
 
 #headerBackground {
