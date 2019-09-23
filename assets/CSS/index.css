@@ -24,6 +24,51 @@ html {
     padding: 0;
 }
 
+.greaterConvGrid {
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-gap: 35px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grTitle grPic"
+    "grSubTitle grPic"
+    "grSmart grPic"
+    "grVirtual grFlash"
+    "grPersonal grSupport";
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -600px;
+    margin-bottom: 300px;
+    position: relative;
+    width: 1350px;
+    z-index: 5;
+}
+
+.greaterConvTile {
+    background-color: white;
+    box-shadow: 0px 0px 40px 12px #e4e3e3;
+    height: 175px;
+    width: 600px;
+}
+
+.greaterConvTile h3 {
+    font-size: 1.5rem;
+}
+
+.greaterConvTile p {
+    color: #868686;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 420px;
+}
+
+.greaterConvTile h3, 
+.greaterConvTile p {
+    margin-left: 100px;
+}
+
 .header {
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -121,6 +166,71 @@ html {
     transition: none;
 }
 
+#geaterConvFamily {
+    grid-area: grPic;
+    justify-self: right;
+    margin-right: -100px;
+    width: 700px;
+}
+
+#greaterConvImg {
+    margin-top: 180px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#greaterConvP {
+    grid-area: grSubTitle;
+}
+
+#greaterConvP p {
+    color: #919191;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 200px;
+}
+
+#greaterConvTitle {
+    align-self: top;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-area: grTitle;
+    justify-self: top;
+    margin-top: -25px;
+    width: 460px;
+}
+
+#greaterConvTitle h1 {
+    font-weight: 700;
+}
+
+#greaterConvTitle p {
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+#grFlashPass {
+    grid-area: grFlash;
+}
+
+#grPersonal {
+    grid-area: grPersonal;
+}
+
+#grSmartMsg {
+    grid-area: grSmart;
+}
+
+#grSupport {
+    grid-area: grSupport;
+}
+
+#grVirtual {
+    grid-area: grVirtual;
+}
+
 #headerBackground {
     left: 0;
     position: absolute;
@@ -214,7 +324,7 @@ html {
     grid-area: problem;
     font-family: 'Raleway', sans-serif;
     margin-top: -40px;
-    width: 550px;
+    width: 430px;
 }
 
 #problemTopic h1 {
@@ -225,7 +335,7 @@ html {
 
 #problemTopic p {
     color: #8c8c8c;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
