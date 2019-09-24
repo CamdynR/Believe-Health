@@ -344,6 +344,16 @@ html {
     transition: none;
 }
 
+#daTitle {
+    font-family: 'Raleway', san-serif;
+    text-align: center;
+    margin: -80px auto 200px auto;
+}
+
+#daTitle h1 {
+    font-weight: 700;
+}
+
 #geaterConvFamily {
     align-self: bottom;
     grid-area: grPic;
@@ -448,6 +458,17 @@ html {
     width: 430px;
 }
 
+#lineGraph {
+    max-width: 1200px;
+    width: 95%;
+}
+
+#lineGraphDiv {
+    text-align: center;
+    margin-bottom: 200px;
+    width: 100%;
+}
+
 #middleProb {
     position: absolute;
     background-color: white;
@@ -469,6 +490,18 @@ html {
     height: 500px;
     margin-top: 50px;
     padding-top: -1px;
+}
+
+#paymentMethods {
+    margin: -40px 0 200px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#paymentMethods h3 {
+    color: #989898;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
 }
 
 #pcLeftColumn {
@@ -493,12 +526,14 @@ html {
     grid-area: pcTitle;
 }
 
-#pcTitle h1 {
+#pcTitle h1,
+#daTitle h1 {
     color: #33b1e1;
     font-size: 3rem;
 }
 
-#pcTitle h3 {
+#pcTitle h3,
+#daTitle h3 {
     font-size: 1.8rem;
     margin-bottom: 80px;
     margin-top: -25px;
