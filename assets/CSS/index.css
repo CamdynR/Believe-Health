@@ -138,6 +138,28 @@ html {
     z-index: 5;
 }
 
+.proactiveCareDiv {
+    align-items: center;
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "pcTitle pcTitle"
+    "leftCol rightCol"
+    "leftCol rightCol"
+    "leftCol rightCol"
+    "leftCol rightCol";
+    height: 1300px;
+    justify-items: center;
+    margin: 100px auto 300px auto;
+    position: relative;
+    text-align: center;
+    width: 1350px;
+    z-index: 5;
+}
+
 .title {
     align-self: center;
     color: white;
@@ -173,6 +195,15 @@ html {
     margin: -760px 0 0 -430px;
     position: absolute;
     width: 860px;
+    z-index: 1;
+}
+
+#backgroundCircles2 {
+    left: 50%;
+    margin-left: -650px;
+    margin-top: -1400px;
+    position: absolute;
+    width: 1300px;
     z-index: 1;
 }
 
@@ -264,7 +295,7 @@ html {
 #geaterConvFamily {
     grid-area: grPic;
     justify-self: right;
-    margin-right: -100px;
+    margin: 60px -25px 0 0;
     width: 700px;
 }
 
@@ -277,13 +308,7 @@ html {
 
 #greaterConvP {
     grid-area: grSubTitle;
-}
-
-#greaterConvP p {
-    color: #919191;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 200px;
+    margin-bottom: 165px;
 }
 
 #greaterConvTitle {
@@ -293,7 +318,7 @@ html {
     font-weight: 700;
     grid-area: grTitle;
     justify-self: top;
-    margin-top: -25px;
+    margin-top: 100px;
     width: 460px;
 }
 
@@ -373,12 +398,49 @@ html {
     width: 785px;
 }
 
+#momAndBaby {
+    margin-top: 250px;
+    width: 100%;
+}
+
 #outerProbs {
     background-color: white;
     box-shadow: 0px 0px 40px 12px #e0e0e0;
     height: 500px;
     margin-top: 50px;
     padding-top: -1px;
+}
+
+#pcLeftColumn {
+    border: 3px solid #d9d9d9;
+    border-radius: 15px;
+    background-color: white;
+    grid-area: leftCol;
+    height: 1000px;
+    width: 500px;
+}
+
+#pcRightColumn {
+    border: 3px solid #1aade4;
+    border-radius: 15px;
+    background-color: white;
+    grid-area: rightCol;
+    height: 1000px;
+    width: 500px;
+}
+
+#pcTitle {
+    grid-area: pcTitle;
+}
+
+#pcTitle h1 {
+    color: #33b1e1;
+    font-size: 3rem;
+}
+
+#pcTitle h3 {
+    font-size: 1.8rem;
+    margin-top: -10px;
 }
 
 #prob1 {
