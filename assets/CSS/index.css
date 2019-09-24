@@ -79,6 +79,11 @@ html {
     width: 280px;
 }
 
+.columnTitle {
+    color: #90a2bd;
+    font-weight: 700;
+}
+
 .greaterConvGrid {
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -136,6 +141,29 @@ html {
     top: 0px;
     width: 100%;
     z-index: 5;
+}
+
+.horizLine {
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 2px solid #f4f4f4;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+
+.price {
+    color: #1aade4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 900;
+}
+
+.priceSubtitle {
+    color: #dbdfec;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: -35px;
 }
 
 .proactiveCareDiv {
@@ -293,10 +321,11 @@ html {
 }
 
 #geaterConvFamily {
+    align-self: bottom;
     grid-area: grPic;
-    justify-self: right;
-    margin: 60px -25px 0 0;
-    width: 700px;
+    justify-self: left;
+    margin: 140px 0 0 90px;
+    width: 32vw;
 }
 
 #greaterConvImg {
@@ -308,7 +337,7 @@ html {
 
 #greaterConvP {
     grid-area: grSubTitle;
-    margin-bottom: 165px;
+    margin-bottom: 185px;
 }
 
 #greaterConvTitle {
@@ -440,7 +469,8 @@ html {
 
 #pcTitle h3 {
     font-size: 1.8rem;
-    margin-top: -10px;
+    margin-bottom: 80px;
+    margin-top: -25px;
 }
 
 #prob1 {
@@ -490,9 +520,10 @@ html {
 }
 
 #problemDivEllipse {
+    left: 50%;
     margin-top: -1050px;
+    margin-left: 290px;
     position: absolute;
-    right: 0;
 }
 
 #problemList {
@@ -547,3 +578,4 @@ html {
     padding-bottom: 3px;
     transition: ease 0.1s all;
 }
+
