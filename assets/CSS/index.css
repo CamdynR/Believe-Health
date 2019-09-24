@@ -24,6 +24,26 @@ html {
     padding: 0;
 }
 
+.believeTeamDiv {
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+    "btTitle btTitle btTitle"
+    "doug sandy ben"
+    "doug sandy ben"
+    "doug sandy ben";
+    height: 845px;
+    justify-items: center;
+    margin: -100px auto 200px auto;
+    position: relative;
+    text-align: center;
+    width: 1350px;
+    z-index: 5;
+}
+
 .benefitsDivTop {
     display: grid;
     font-family: 'Raleway', sans-serif;
@@ -99,6 +119,56 @@ html {
 .columnTitle {
     color: #90a2bd;
     font-weight: 700;
+}
+
+.footerDiv {
+    background-color: #33b1e1;
+    color: white;
+    height: 375px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footerDiv h1 {
+    margin: 0;
+}
+
+.getInTouchDiv {
+    background-color: #3b8dc4;
+    color: white;
+    height: 850px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.getInvolvedDiv {
+    font-family: 'Raleway', sans-serif;
+    margin: -75px auto 100px auto;
+    text-align: center;
+    width: 1100px;
+}
+
+.getInvolvedDiv a {
+    color: #1686c7;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.getInvolvedDiv a:hover {
+    text-decoration: underline;
+}
+
+.getInvolvedDiv h1 {
+    font-size: 2.2rem;
+}
+
+.getInvolvedDiv p {
+    color: #8f8f8f;
+    font-size: 1.5rem;
 }
 
 .grayText {
@@ -212,6 +282,39 @@ html {
     z-index: 5;
 }
 
+.teamImg {
+    clip-path: circle(50%);
+    margin-top: 30px;
+}
+
+.teamTile {
+    background-color: white;
+    box-shadow: 0px 0px 40px 4px #eeeded;
+    height: 620px;
+    margin-top: 0px;
+    width: 350px;
+}
+
+.teamTile h2 {
+    color: #1686c7;
+    font-size: 2.12rem;
+}
+
+.teamTile p {
+    color: #bababa;
+    font-size: 1.1rem;
+    margin: 20px auto 25px auto;
+    width: 295px;
+}
+
+.teamTileName {
+    margin: 20px 0 0 0;
+}
+
+.teamTilePosition {
+    margin: 5px 0 0 0;
+}
+
 .title {
     align-self: center;
     color: white;
@@ -319,6 +422,43 @@ html {
     font-size: 1.8rem;
 }
 
+#benTile {
+    grid-area: ben;
+}
+
+#benTile p {
+    width: 280px;
+}
+
+#benTile .contactIcon {
+    margin-top: 25px;
+}
+
+#benTile .linkedInIcon {
+    margin-right: 7px;
+}
+
+#benTile .emailIcon {
+    margin-left: 7px;
+}
+
+#btTitle {
+    grid-area: btTitle;
+    justify-self: left;
+    margin-left: 45px;
+    text-align: left;
+}
+
+#btTitle p {
+    color: #b3b3b3;
+    font-size: 1.5rem;
+}
+
+#btTitle h3 {
+    font-size: 1.8rem;
+    width: 1100px;
+}
+
 #contactButton {
     background-color: #ea1e49;
     border: none;
@@ -352,6 +492,22 @@ html {
 
 #daTitle h1 {
     font-weight: 700;
+}
+
+#dougTile {
+    grid-area: doug;
+}
+
+#dougTile .contactIcon {
+    margin-top: 25px;
+}
+
+#dougTile .linkedInIcon {
+    margin-right: 7px;
+}
+
+#dougTile .emailIcon {
+    margin-left: 7px;
 }
 
 #geaterConvFamily {
@@ -616,6 +772,26 @@ html {
     color: #8c8c8c;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+#sandyTile {
+    grid-area: sandy;
+}
+
+#sandyTile .contactIcon {
+    margin-top: 5px;
+}
+
+#sandyTile .linkedInIcon {
+    margin-right: 5px;
+}
+
+#sandyTile .twitterIcon {
+    margin: 0 5px;
+}
+
+#sandyTile .emailIcon {
+    margin-left: 5px;
 }
 
 #theProblemDiv {
