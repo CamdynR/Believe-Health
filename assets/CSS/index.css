@@ -124,7 +124,7 @@ html {
 .footerDiv {
     background-color: #33b1e1;
     color: white;
-    height: 375px;
+    height: 317px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     text-align: center;
@@ -133,6 +133,7 @@ html {
 
 .footerDiv h1 {
     margin: 0;
+    padding-top: 30px;
 }
 
 .getInTouchDiv {
@@ -540,6 +541,60 @@ html {
     margin-left: 7px;
 }
 
+#footerBelieveLogo {
+    float: left !important;
+    grid-area: believe;
+    width: 160px;
+}
+
+#footerCopyright {
+    grid-area: copyright;
+}
+
+#footerHR {
+    background-color: #5cc4f2;
+    height: 2px;
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+#footerLinks {
+    align-items: center;
+    bottom: -40px;
+    display: grid;
+    grid-template-areas: 
+    "believe copyright terms";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: 110px;
+    left: 50%;
+    margin-left: -567.5px;
+    position: relative;
+    width: 1125px;
+    z-index: 11;
+}
+
+#footerLinks a {
+    justify-self: right;
+    width: 158px;
+}
+
+#footerLinks p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#footerTerms {
+    float: right;
+    grid-area: terms;
+}
+
+#footerTerms:hover {
+    text-decoration: underline !important;
+}
+
 #formContact {
     grid-area: contact;
 }
@@ -714,6 +769,56 @@ html {
 #momAndBaby {
     margin-top: 250px;
     width: 100%;
+}
+
+#newsletterEmail {
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    color: rgb(99, 99, 99);
+    float: left;
+    padding: 0 0 0 30px;
+    width: 470px;
+}
+
+#newsletterEmail:active,
+#newsletterEmail:focus {
+    outline: none;
+}
+
+#newsletterEmail::placeholder {
+    color: #9c9c9c;
+}
+
+#newsletterForm {
+    margin: 30px auto 0 auto;
+    width: 600px;
+}
+
+#newsletterSubmit { 
+    background-color: #3b8dc4;
+    border: none;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    color: white;
+    float: right;
+    transition: ease 0.2s all;
+    width: 100px;
+}
+
+#newsletterSubmit:hover {
+    background-color: #337cac;
+}
+
+#newsletterSubmitText {
+    margin-left: -8px;
+}
+
+#newsletterEmail,
+#newsletterForm,
+#newsletterSubmit {
+    height: 70px;
+    font-size: 1.2rem;
 }
 
 #outerProbs {
