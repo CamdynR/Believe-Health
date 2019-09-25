@@ -484,6 +484,30 @@ html {
     transition: none;
 }
 
+#contactForm {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    "firstname lastname"
+    "email email"
+    "phone phone"
+    "physician physician"
+    "contact contact"
+    "submit submit";
+    grid-template-columns: 350px 350px;
+    grid-template-rows: repeat(6, auto);
+    height: 450px;
+    margin: 50px auto 0 auto;
+    width: 715px;
+}
+
+#contactForm input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    height: 65px;
+}
+
 #daTitle {
     font-family: 'Raleway', san-serif;
     text-align: center;
@@ -510,12 +534,44 @@ html {
     margin-left: 7px;
 }
 
+#formContact {
+    grid-area: contact;
+}
+
+#formEmail {
+    grid-area: email;
+}
+
+#formFirstname {
+    grid-area: firstname;
+}
+
+#formLastname {
+    grid-area: lastname;
+}
+
+#formPhone {
+    grid-area: phone;
+}
+
+#formPhysician {
+    grid-area: physician;
+}
+
+#formSubmitBtn {
+    grid-area: submit
+}
+
 #geaterConvFamily {
     align-self: bottom;
     grid-area: grPic;
     justify-self: left;
     margin: 140px 0 0 90px;
     width: 32vw;
+}
+
+#getInTouchTitle {
+    padding-top: 30px;
 }
 
 #greaterConvImg {
