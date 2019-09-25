@@ -138,7 +138,7 @@ html {
 .getInTouchDiv {
     background-color: #3b8dc4;
     color: white;
-    height: 850px;
+    height: 665px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     text-align: center;
@@ -486,7 +486,7 @@ html {
 
 #contactForm {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 25px;
     grid-template-areas:
     "firstname lastname"
     "email email"
@@ -497,15 +497,21 @@ html {
     grid-template-columns: 350px 350px;
     grid-template-rows: repeat(6, auto);
     height: 450px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     width: 715px;
 }
 
 #contactForm input {
     border: none;
     border-radius: 5px;
-    padding-left: 20px;
+    color: rgb(99, 99, 99);
+    font-size: 1.2rem;
     height: 65px;
+    padding-left: 20px;
+}
+
+#contactForm input::placeholder {
+    color: #9c9c9c;
 }
 
 #daTitle {
@@ -559,7 +565,21 @@ html {
 }
 
 #formSubmitBtn {
-    grid-area: submit
+    background-color: #33b1e1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    grid-area: submit;
+    height: 60px;
+    margin: 0 auto;
+    transition: ease 0.2s all;
+    width: 475px;
+}
+
+#formSubmitBtn:hover {
+    background-color: #30a8d8;
 }
 
 #geaterConvFamily {
@@ -876,4 +896,3 @@ html {
     padding-bottom: 3px;
     transition: ease 0.1s all;
 }
-
