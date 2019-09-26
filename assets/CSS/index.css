@@ -124,7 +124,7 @@ html {
 .footerDiv {
     background-color: #33b1e1;
     color: white;
-    height: 317px;
+    height: 318px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     text-align: center;
@@ -643,6 +643,7 @@ html {
     justify-self: left;
     margin: 140px 0 0 90px;
     width: 32vw;
+    max-width: 600px;
 }
 
 #getInTouchTitle {
@@ -726,11 +727,17 @@ html {
     width: 47px;
 }
 
+#hamburgerMenu {
+    display: none;
+}
+
 #headerBackground {
+    height: 150vh;
     left: 0;
+    max-width: 100%;
+    object-fit: cover;
     position: absolute;
     top: -150px;
-    width: 100%;
     z-index: 1;
 }
 
@@ -926,6 +933,7 @@ html {
     left: 50%;
     margin-top: -1050px;
     margin-left: 290px;
+    object-fit: cover;
     position: absolute;
 }
 
@@ -984,7 +992,7 @@ html {
     "problem rect"
     "problem rect";
     height: 1200px;
-    margin-top: 105vh;
+    margin-top: 115vh;
     margin-left: auto;
     margin-right: auto;
     width: 1350px;
@@ -1000,4 +1008,238 @@ html {
     border-bottom: 3px solid #1aade4;
     padding-bottom: 3px;
     transition: ease 0.1s all;
+}
+
+/* Media Queries Below*/
+
+/* Media Query for Laptops */
+@media only screen and (max-width: 1480px) and (min-width: 1024px) {
+    #theProblemDiv {
+        margin-top: 100vh;
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1360px) and (min-width: 1024px) {
+    #theProblemDiv {
+        grid-template-columns: 40% 60%;
+        margin-top: 95vh;
+        transform: scale(0.8);
+        width: 1200px;
+    }
+
+    #middleProb {
+        margin-left: -50px !important;
+        width: 820px;
+    }
+
+    #middleProb li {
+        width: 490px;
+    }
+
+    #problemTopic {
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    #believeTopic {
+        margin-bottom: -200px;
+    }
+
+    #theProblemDiv {
+        grid-gap: 80px;
+        grid-template-columns: 40% 60%;
+        margin-top: 75vh;
+        transform: scale(0.7);
+        width: 1024px;
+    }
+
+    #theProblemDiv li {
+        margin-left: 10px;
+        width: 450px;
+    }
+
+    #middleProb {
+        width: 715px;
+    }
+
+    #middleProb li {
+        margin-left: -50px;
+    }
+
+    #prob1 {
+        background: url('../images/diamond.png') no-repeat left 64px !important;
+    }
+
+    #prob1 li {
+        margin-top: -20px;
+    }
+
+    #prob2 {
+        background: url('../images/diamond.png') no-repeat left 50px;
+        margin-left: 90px;
+        padding-left: 105px;
+    }
+
+    #prob3 {
+        background: url('../images/diamond.png') no-repeat left 43px;
+        margin-top: 240px;
+    }
+}
+
+
+/* Media Query for large tablets*/
+@media only screen and (max-width: 1200px) {
+    .bun {
+        background-color: white;
+        border-radius: 3px;
+        display: block;
+        height: 7px;
+        width: 40px;
+        z-index: 6;
+    }
+
+    .topbarLink,
+    #topbarLinksDiv {
+        display: none;
+    }
+
+    .side {
+        display: block !important;
+    }
+
+    #bottomBun, 
+    #middleBun {
+        margin-top: 5px;
+    }
+
+    #hamburgerCheckbox {
+        display: block;
+        height: 39px;
+        margin: -2px 0 0 -4px;
+        opacity: 0;
+        position: absolute;
+        width: 50px;
+        z-index: 7;
+    }
+
+    #hamburgerCheckbox:checked ~ #menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #hamburgerIcon {
+        position: relative;
+        z-index: 6;
+    }
+
+    #hamburgerMenu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 0px;
+        z-index: 6;
+    }
+
+    #menu {
+        background-color: rgba(20, 20, 20, .9);
+        border-radius: 4px;
+        height: 365px;
+        margin: 10px 0 0 0;
+        opacity: 0;
+        padding: 0px 20px 20px 30px;
+        position: absolute;
+        right: -30px;
+        text-align: right;
+        top: -40px;
+        transition: ease 0.3s all;
+        visibility: hidden;
+        width: 140px;
+        z-index: 5;
+    }
+
+    #menu a {
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    #topSideLink {
+        margin-top: 90px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #problemTopic {
+        margin-top: -130px;
+    }
+
+    #theProblemDiv {
+        align-items: center !important;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "believe"
+        "problem"
+        "problem"
+        "rect"
+        "rect";
+        height: 1200px;
+        justify-items: center !important;
+        margin: 115vh auto 0 auto;
+        text-align: center;
+        width: 800px;
+    }
+
+    #middleProb {
+        margin-left: 60;
+        width: 750px;
+    }
+
+    #prob1, #prob3 {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    #problemList {
+        margin-top: -200px;
+    }
+
+    #problemList  li{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header h1 {
+        font-size: 2.3rem;
+    }
+
+    #believeLogo {
+        margin: -10px 0 0 20px;
+        width: 200px;
+    }
+
+    #theProblemDiv {
+        margin-top: 95vh;
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .title {
+        width: 300px;
+    }
+
+    .title h1 {
+        margin-bottom: 20px;
+    }
+
+    #believeLogo {
+        width: 150px;
+    }
+
+    #hamburgerIcon {
+        margin-right: -10px;
+    }
 }
